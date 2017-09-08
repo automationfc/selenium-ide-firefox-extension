@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://live.guru99.com/" />
+<title>TC_04_Create_New_Account</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC_04_Create_New_Account</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>x</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>10</td>
+	<td>y</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>callToOpen</td>
+	<td></td>
+</tr>
+<!------------------------------------------>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.footer &gt; div.links &gt; ul &gt; li.first &gt; a[title=&quot;My Account&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=a.button &gt; span &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=firstname</td>
+	<td>AUTOMATION</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastname</td>
+	<td>TESTING</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{&quot;autotesting&quot;+Math.floor(Math.random()*111111)+&quot;@gmail.com&quot;;}</td>
+	<td>email</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email_address</td>
+	<td>${email}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>123123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=confirmation</td>
+	<td>123123</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.buttons-set &gt; button.button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=li &gt; span</td>
+	<td>Thank you for registering with Main Website Store.</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=li &gt; span</td>
+	<td>Thank you for registering with Main Website Store.</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.box-content &gt; p</td>
+	<td>AUTOMATION TESTING<br /> ${email}<br /> Change Password</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.box-content &gt; p</td>
+	<td>AUTOMATION TESTING<br /> ${email}<br /> Change Password</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.skip-link.skip-account &gt; span.label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Log Out</td>
+	<td></td>
+</tr>
+<!-------------------------------------------------->
+<tr>
+	<td>store</td>
+	<td>${y}-1</td>
+	<td>y</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${y}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${x}&lt;=${y}</td>
+	<td>callToOpen</td>
+</tr>
+</tbody></table>
+</body>
+</html>

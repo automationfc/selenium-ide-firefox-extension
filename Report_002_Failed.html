@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://live.guru99.com/" />
+<title>TC_005_Loop</title>
+<style>
+.failed {color: red; background-color: #ffcccc;}
+.passed {color: green; background-color: #ccffcc;}
+.done {color: #404040; background-color: #ccffcc;}
+.comment {color: #404040; background-color: #d0d0d0;}
+body, table { font-family: Verdana, Arial, sans-serif; font-size: 12pt; }
+table { border-collapse: collapse; border: 1px solid #ccc; }
+th, td { padding-left: 0.3em; padding-right: 0.3em; border: 1px solid #ccc; }
+#suiteSummaryTable thead { font-size: 14pt; font-weight: 800; }
+.test_case thead { font-size: 14pt; font-weight: 400; }
+</style>
+</head>
+<body>
+<table>
+<thead>
+<tr><td colspan="4">Test case: TC_005_Loop</td></tr>
+</thead><tbody>
+<tr class="done">
+	<td>store</td>
+	<td>1</td>
+	<td>x</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>while</td>
+	<td>${x}&lt;=1</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>echo</td>
+	<td>${x}</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="comment">
+	<td colspan="4">Start run testscript</td>
+</tr>
+<tr class="done">
+	<td>open</td>
+	<td>http://donorhub.magrabbitgateway.com</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>waitForText</td>
+	<td>css=li.li-menu.hidden-xs &gt; a.section-scroll</td>
+	<td>Search</td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyText</td>
+	<td>css=li.li-menu.hidden-xs &gt; a.section-scroll</td>
+	<td>Search</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>css=li.li-menu.hidden-xs &gt; a.section-scroll</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>name=camp_title</td>
+	<td>&nbsp;&nbsp;Jillian Carroll</td>
+	<td></td>
+</tr>
+<tr class="failed">
+	<td>clickAndWait</td>
+	<td>//input[@value='SEARCH1']</td>
+	<td></td>
+	<td>Element //input[@value='SEARCH1'] not found</td>
+</tr>
+<tr class="">
+	<td>waitForText</td>
+	<td>css=h1.headerStaticPage.text-uppercase</td>
+	<td>Search Result</td>
+	<td></td>
+</tr>
+<tr class="">
+	<td>verifyText</td>
+	<td>css=h1.headerStaticPage.text-uppercase</td>
+	<td>Search Result</td>
+	<td></td>
+</tr>
+<tr class="comment">
+	<td colspan="4">End testscript</td>
+</tr>
+<tr class="">
+	<td>storeEval</td>
+	<td>storedVars['x'] = ${x}+1</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="">
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

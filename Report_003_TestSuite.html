@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style>
+.failed {color: red; background-color: #ffcccc;}
+.passed {color: green; background-color: #ccffcc;}
+.done {color: #404040; background-color: #ccffcc;}
+.comment {color: #404040; background-color: #d0d0d0;}
+body, table { font-family: Verdana, Arial, sans-serif; font-size: 12pt; }
+table { border-collapse: collapse; border: 1px solid #ccc; }
+th, td { padding-left: 0.3em; padding-right: 0.3em; border: 1px solid #ccc; }
+#suiteSummaryTable thead { font-size: 14pt; font-weight: 800; }
+.test_case thead { font-size: 14pt; font-weight: 400; }
+</style>
+</head>
+<body>
+<table id="suiteSummaryTable" class="selenium">
+<thead><tr class="passed"><td>Test Suite: TestSuite_01.html</td></tr></thead>
+<tbody>
+<tr><td>Test cases: 5 total / <span class="passed">5</span> passed / <span class="failed">0</span> failed</td></tr>
+<tr><td>Commands: 70 total / <span class="passed">70</span> passed / <span class="failed">0</span> failed / <span class="skipped">0</span> skipped</td></tr>
+</tbody></table><br>
+<table id="suiteTable" class="selenium">
+<thead><tr><td>Index of test cases</td></tr></thead>
+<tbody>
+<tr class="passed"><td><a href="#test0">TC_001_LoginPageIsDiplay</a></td></tr>
+<tr class="passed"><td><a href="#test1">TC_002_RandomEmail</a></td></tr>
+<tr class="passed"><td><a href="#test2">TC_003_HandleJavascriptAlert</a></td></tr>
+<tr class="passed"><td><a href="#test3">TC_005_Loop</a></td></tr>
+<tr class="done"><td><a href="#test4">TC_006_WaitForAjaxDone</a></td></tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test0"></a><table class="test_case"><thead><tr><td colspan="4">Test case: TC_001_LoginPageIsDiplay</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=LOG IN</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>waitForElementPresent</td>
+	<td>css=div.login-body.modal-body</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyElementPresent</td>
+	<td>css=div.login-body.modal-body</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>css=button.close.login-close-Bt</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=LOG IN</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>id=organizationBt</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>waitForElementPresent</td>
+	<td>//*[@id='loginOrgForm']</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyElementPresent</td>
+	<td>//*[@id='loginOrgForm']</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>css=button.close.login-close-Bt</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>link=LOG IN</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>id=donationBt</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>waitForElementPresent</td>
+	<td>//*[@id='loginDonateForm']</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyElementPresent</td>
+	<td>//*[@id='loginDonateForm']</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>css=button.close.login-close-Bt</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test1"></a><table class="test_case"><thead><tr><td colspan="4">Test case: TC_002_RandomEmail</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>id=create_account</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>link=I AM A DONOR</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=first_name</td>
+	<td>Automation</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=last_name</td>
+	<td>Testing</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>store</td>
+	<td>javascript{&quot;autotesting&quot;+Math.floor(Math.random()*111111)+&quot;@mailinator.com&quot;;}</td>
+	<td>x</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>echo</td>
+	<td>${x}</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=email</td>
+	<td>${x}</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=logoImage</td>
+	<td>C:\Users\Administrator\Desktop\nice-wallpaper-1.jpg</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>id=crop-btn</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=password</td>
+	<td>Auto123!@#</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>name=agree</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>id=btnSend</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>waitForText</td>
+	<td>css=h1</td>
+	<td>YOUR ACCOUNT HAS BEEN CREATED!</td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyText</td>
+	<td>css=h1</td>
+	<td>YOUR ACCOUNT HAS BEEN CREATED!</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>css=button.btn.btn-primary</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test2"></a><table class="test_case"><thead><tr><td colspan="4">Test case: TC_003_HandleJavascriptAlert</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>css=li &gt; button</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="comment">
+	<td colspan="4">Click Javascript Alert</td>
+</tr>
+<tr class="passed">
+	<td>assertAlert</td>
+	<td>I am a JS Alert</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>waitForText</td>
+	<td>id=result</td>
+	<td>You clicked an alert successfully</td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyText</td>
+	<td>id=result</td>
+	<td>You clicked an alert successfully</td>
+	<td></td>
+</tr>
+<tr class="comment">
+	<td colspan="4">Click Javascript Confirm</td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>//button[@onclick='jsConfirm()']</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertConfirmation</td>
+	<td>I am a JS Confirm</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>waitForText</td>
+	<td>id=result</td>
+	<td>You clicked: Ok</td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyText</td>
+	<td>id=result</td>
+	<td>You clicked: Ok</td>
+	<td></td>
+</tr>
+<tr class="comment">
+	<td colspan="4">Click Javascript Prompt</td>
+</tr>
+<tr class="done">
+	<td>answerOnNextPrompt</td>
+	<td>daominhdam</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>//button[@onclick='jsPrompt()']</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>assertPrompt</td>
+	<td>I am a JS prompt</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>waitForText</td>
+	<td>id=result</td>
+	<td>You entered: daominhdam</td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyText</td>
+	<td>id=result</td>
+	<td>You entered: daominhdam</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test3"></a><table class="test_case"><thead><tr><td colspan="4">Test case: TC_005_Loop</td></tr></thead><tbody><tr class="done">
+	<td>store</td>
+	<td>1</td>
+	<td>x</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>while</td>
+	<td>${x}&lt;=1</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>echo</td>
+	<td>${x}</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="comment">
+	<td colspan="4">Start run testscript</td>
+</tr>
+<tr class="done">
+	<td>open</td>
+	<td>http://donorhub.magrabbitgateway.com</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>waitForText</td>
+	<td>css=li.li-menu.hidden-xs &gt; a.section-scroll</td>
+	<td>Search</td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyText</td>
+	<td>css=li.li-menu.hidden-xs &gt; a.section-scroll</td>
+	<td>Search</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>css=li.li-menu.hidden-xs &gt; a.section-scroll</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>name=camp_title</td>
+	<td>&nbsp;&nbsp;Jillian Carroll and her mother, Judy Donor’s Daugh</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>//input[@value='SEARCH']</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>waitForText</td>
+	<td>css=h1.headerStaticPage.text-uppercase</td>
+	<td>Search Result</td>
+	<td></td>
+</tr>
+<tr class="passed">
+	<td>verifyText</td>
+	<td>css=h1.headerStaticPage.text-uppercase</td>
+	<td>Search Result</td>
+	<td></td>
+</tr>
+<tr class="comment">
+	<td colspan="4">End testscript</td>
+</tr>
+<tr class="done">
+	<td>storeEval</td>
+	<td>storedVars['x'] = ${x}+1</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+<br><hr><br><a name="test4"></a><table class="test_case"><thead><tr><td colspan="4">Test case: TC_006_WaitForAjaxDone</td></tr></thead><tbody><tr class="done">
+	<td>open</td>
+	<td>http://agenttool-uat.magrabbit.com</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=userName</td>
+	<td>tamle</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>type</td>
+	<td>id=password</td>
+	<td>tamle</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>id=login</td>
+	<td></td>
+	<td>Timed out after 30000ms</td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>link=Notebooks</td>
+	<td></td>
+	<td>Element link=Notebooks not found</td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>id=btFilterProduct</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>waitForElementPresent</td>
+	<td>id=chk</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>id=chk</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>click</td>
+	<td>id=btUpdateCard</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>waitForText</td>
+	<td>//div[@id='divSearchProductResults']/table[2]/tbody/tr[3]/td[3]</td>
+	<td>AGENT-STORE-PENDING</td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>clickAndWait</td>
+	<td>id=Toolbar3exit.asp</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr class="done">
+	<td>waitForText</td>
+	<td>id=userName</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+
+</body></html>
